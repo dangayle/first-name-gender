@@ -8,6 +8,7 @@ It's easy to use:
     from names import names
     if key in names:
         return names[key]
+    
 
 Example
 ----
@@ -18,7 +19,10 @@ Example
     if "jessie" in names:
         print names['jessie']
 
+
 returns:
 
     Male
     Neutral
+
+You'll want to make sure that you convert your name to lowercase before checking, as dicts are case sensitive.
